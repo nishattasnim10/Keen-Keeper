@@ -5,7 +5,7 @@ import fb from '../../assets/facebook.png'
 
 const Footer = () => {
   return (
-      <footer className="bg-[#1e3d2f] text-white py-12 px-6">
+      <footer className="bg-[#1e3d2f] text-white pt-12 px-6 pb-6">
           <div className="container mx-auto flex flex-col items-center text-center">
 
               {/* Brand Name */}

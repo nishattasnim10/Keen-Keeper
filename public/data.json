@@ -1,0 +1,125 @@
+[
+    {
+        "id": 1,
+        "name": "David Kim",
+        "picture": "img/Ellipse 1.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "WORK"
+        ],
+        "status": "Almost Due"
+    },
+    {
+        "id": 2,
+        "name": "Emma Wilson",
+        "picture": "img/Ellipse 2.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "FAMILY"
+        ],
+        "status": "Overdue"
+    },
+    {
+        "id": 3,
+        "name": "Lisa Nakamura",
+        "picture": "img/Ellipse 3.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "WORK"
+        ],
+        "status": "Overdue"
+    },
+    {
+        "id": 4,
+        "name": "James Wright",
+        "picture": "img/Ellipse 4.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "HOBBY",
+            "TRAVEL"
+        ],
+        "status": "Overdue"
+    },
+    {
+        "id": 5,
+        "name": "David Kim",
+        "picture": "img/Ellipse 5.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "WORK"
+        ],
+        "status": "Overdue"
+    },
+    {
+        "id": 6,
+        "name": "Emma Wilson",
+        "picture": "img/Ellipse 6.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "FAMILY"
+        ],
+        "status": "On-Track"
+    },
+    {
+        "id": 7,
+        "name": "Lisa Nakamura",
+        "picture": "img/Ellipse 7.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "WORK"
+        ],
+        "status": "On-Track"
+    },
+    {
+        "id": 8,
+        "name": "James Wright",
+        "picture": "img/Ellipse 8.png",
+        "days_since_contact": "62d ago",
+        "tags": [
+            "HOBBY",
+            "TRAVEL"
+        ],
+        "status": "Almost Due"
+    },
+    {
+        "id": 9,
+        "name": "Sarah Jenkins",
+        "picture": "img/Ellipse 9.png",
+        "days_since_contact": "5d ago",
+        "tags": [
+            "COLLEGE"
+        ],
+        "status": "On-Track"
+    },
+    {
+        "id": 10,
+        "name": "Marcus Chen",
+        "picture": "img/Ellipse 10.png",
+        "days_since_contact": "15d ago",
+        "tags": [
+            "WORK"
+        ],
+        "status": "Almost Due"
+    },
+    {
+        "id": 11,
+        "name": "Chloe Zhao",
+        "picture": "img/Ellipse 11.png",
+        "days_since_contact": "90d ago",
+        "tags": [
+            "TRAVEL"
+        ],
+        "status": "Overdue"
+    },
+    {
+        "id": 12,
+        "name": "Tariq Aziz",
+        "picture": "img/Ellipse 12.png",
+        "days_since_contact": "2d ago",
+        "tags": [
+            "HOBBY",
+            "TRAVEL"
+        ],
+        "status": "On-Track"
+    }
+]
