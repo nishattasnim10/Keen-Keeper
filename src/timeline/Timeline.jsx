@@ -20,8 +20,10 @@ const Timeline = () => {
   });
 
   return (
-    <div className="max-w-4xl mx-auto p-5 mt-10">
-      <h1 className="text-3xl font-bold text-slate-800 mb-5">Timeline</h1>
+
+  <div className='bg-gray-50'>
+    <div className="max-w-4xl mx-auto p-5 ">
+        <h1 className=" mt-10 text-3xl font-bold text-slate-800 mb-5">Timeline</h1>
 
       {/* filter */}
       <select
@@ -74,6 +76,7 @@ const Timeline = () => {
         )}
       </div>
     </div>
+  </div>
   );
 };
 

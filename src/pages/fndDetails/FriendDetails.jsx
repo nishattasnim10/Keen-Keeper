@@ -10,6 +10,8 @@ import { BiVideo } from "react-icons/bi";
 import { PropagateLoader } from 'react-spinners';
 import { useState, useContext } from 'react';
 import { ContextTimeline } from '../../context/TimelineContext';
+import { toast } from 'react-toastify';
+
 
 
 const FriendDetails = () => {
@@ -47,6 +49,7 @@ const FriendDetails = () => {
         };
 
         setTimelineData([...timelineData, newTimelineEntry]);
+        toast.success(`${type} with ${expectedFriend?.name}`);
     };
 
 
