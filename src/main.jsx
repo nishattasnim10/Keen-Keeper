@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Homepage from './pages/homepage/Homepage';
+import FriendDetails from './pages/fndDetails/FriendDetails';
 
 const router = createBrowserRouter(
   [
@@ -22,6 +23,10 @@ const router = createBrowserRouter(
       {
         path: "/Friends",
         element: <h2>Friends</h2>
+      },
+      {
+        path: ":id",
+        element: <FriendDetails />
       },
         {
           path: "/Timeline",
