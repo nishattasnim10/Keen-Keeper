@@ -8,6 +8,8 @@ import { BiPhoneCall } from "react-icons/bi";
 import { BiChat } from "react-icons/bi";
 import { BiVideo } from "react-icons/bi";
 import { PropagateLoader } from 'react-spinners';
+import { useState, useContext } from 'react';
+import { ContextTimeline } from '../../context/TimelineContext';
 
 
 const FriendDetails = () => {
@@ -16,10 +18,10 @@ const FriendDetails = () => {
 
     const { friends, loading } = UseFriends();
 
-    // const expectedFriend = friends.find((friend) =>String( friend.id) ===id);
     const expectedFriend = friends.find((friend) =>friend.id == id);
     console.log(friends, 'friends from hook');
     console.log(expectedFriend, 'expected friend');
+    const { timelineData, setTimelineData  } = useContext(ContextTimeline);
 
     // loading
 
@@ -31,6 +33,25 @@ const FriendDetails = () => {
         );
     }
 
+    // handle check in btn
+
+    // const handleCheckInBtn= ()=>{
+    //     setTimelineData([...timelineData, expectedFriend]); 
+    // }
+
+    const handleCheckInBtn = (type) => {
+        const newTimelineEntry = {
+            ...expectedFriend,
+            preferred_contact: type, 
+            entry_id: Date.now() 
+        };
+
+        setTimelineData([...timelineData, newTimelineEntry]);
+    };
+
+
+
+    // show details
     return (
         <div className="bg-[#F8FAFC] min-h-screen p-4 md:p-10 ">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -113,13 +134,13 @@ const FriendDetails = () => {
 
                         {/* buttons */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
-                            <button className="flex flex-col items-center justify-center p-6 bg-[#F8FAFC] hover:bg-[#F1F5F9] rounded-2xl border border-gray-200 transition-all  text-[#475569] cursor-pointer">
+                            <button className="flex flex-col items-center justify-center p-6 bg-[#F8FAFC] hover:bg-[#F1F5F9] rounded-2xl border border-gray-200 transition-all  text-[#475569] cursor-pointer" onClick={() => handleCheckInBtn('Call')}>
                                 <BiPhoneCall color='black' size={30} />Call
                             </button>
-                            <button className="flex flex-col items-center justify-center p-6 bg-[#F8FAFC] hover:bg-[#F1F5F9] rounded-2xl border border-gray-200 transition-all  text-[#475569] cursor-pointer">
+                            <button className="flex flex-col items-center justify-center p-6 bg-[#F8FAFC] hover:bg-[#F1F5F9] rounded-2xl border border-gray-200 transition-all  text-[#475569] cursor-pointer" onClick={() => handleCheckInBtn('Text')}>
                                 <BiChat color='black' size={30} />Text
                             </button>
-                            <button className="flex flex-col items-center justify-center p-6 bg-[#F8FAFC] hover:bg-[#F1F5F9] rounded-2xl border border-gray-200 transition-all  text-[#475569] cursor-pointer">
+                            <button className="flex flex-col items-center justify-center p-6 bg-[#F8FAFC] hover:bg-[#F1F5F9] rounded-2xl border border-gray-200 transition-all  text-[#475569] cursor-pointer" onClick={() => handleCheckInBtn('Video')}>
                                 <BiVideo color='black' size={30} />Video
                             </button>
                         </div>

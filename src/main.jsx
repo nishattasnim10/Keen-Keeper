@@ -8,6 +8,15 @@ import RootLayout from "./layout/RootLayout";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Homepage from './pages/homepage/Homepage';
 import FriendDetails from './pages/fndDetails/FriendDetails';
+import TimelineProvider from './context/TimelineProvider';
+import { useContext } from 'react';
+import { ContextTimeline } from './context/TimelineContext';
+import Timeline from './timeline/Timeline';
+
+
+
+
+// const contextData = useContext(ContextTimeline);
 
 const router = createBrowserRouter(
   [
@@ -30,7 +39,7 @@ const router = createBrowserRouter(
       },
         {
           path: "/Timeline",
-          element: <h2>Timeline</h2>
+          element: <Timeline />
         },
         {
           path: "/Stats",
@@ -45,7 +54,10 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-   
+
+    <TimelineProvider>
+      <RouterProvider router={router} />
+    </TimelineProvider>
+
   </StrictMode>,
 )
