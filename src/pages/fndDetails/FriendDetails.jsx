@@ -12,8 +12,6 @@ import { useState, useContext } from 'react';
 import { ContextTimeline } from '../../context/TimelineContext';
 import { toast } from 'react-toastify';
 
-
-
 const FriendDetails = () => {
     const { id } = useParams();
     console.log(id,"prm");
@@ -25,6 +23,7 @@ const FriendDetails = () => {
     console.log(expectedFriend, 'expected friend');
     const { timelineData, setTimelineData  } = useContext(ContextTimeline);
 
+
     // loading
 
     if (loading) {
@@ -33,6 +32,10 @@ const FriendDetails = () => {
                 <PropagateLoader color='#166534' />   
             </div>
         );
+    }
+
+    if (!expectedFriend) {
+        return <NotFoundPage />;
     }
 
     // handle check in btn
@@ -64,7 +67,7 @@ const FriendDetails = () => {
                     {/* Profile Card */}
                     <div className="bg-white rounded-2xl p-8 shadow-sm text-center border border-gray-100">
                         <img
-                            src={expectedFriend?.picture}
+                            src={`/${expectedFriend?.picture}`}
                             alt={expectedFriend?.name}
                             className="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-gray-100"
                         />

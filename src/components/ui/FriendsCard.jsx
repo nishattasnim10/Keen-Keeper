@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const FriendsCard = ({friend}) => {
   return (
-      <Link to={`${friend.id}`} className="card bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow">
+      <Link to={`/friend/${friend.id}`} className="card bg-white shadow-sm border border-gray-100 rounded-2xl hover:shadow-md transition-shadow">
           <figure className="px-10 pt-10">
               <img
-                  src={friend.picture}
+                  src={`/${friend.picture}`}
                   alt={friend.name}
                   className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-sm"
               />

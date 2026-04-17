@@ -34,10 +34,7 @@ const router = createBrowserRouter(
         path: "/Friends",
         element: <h2>Friends</h2>
       },
-      {
-        path: ":id",
-        element: <FriendDetails />
-      },
+     
         {
           path: "/Timeline",
           element: <Timeline />
@@ -45,7 +42,11 @@ const router = createBrowserRouter(
         {
           path: "/Stats",
           element: <Stats />
-        }
+        },
+      {
+        path: "friend/:id",
+        element: <FriendDetails />
+      },
     ],
     errorElement: <NotFoundPage />
 
