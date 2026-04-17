@@ -1,16 +1,28 @@
-# React + Vite
+# Keen-Keeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Keen Keeper is a friendship tracker designed to help users stay connected. This application records friend interactions and visualizes social habits through clear, data-driven charts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Description
 
-## React Compiler
+Keen Keeper acts as a digital social log. It provides a way to track how often friends talk and shows the results on a Friendship Analytics Timeline. By using interactive charts, this project helps to see if communication is mostly through calling, texting, or video chatting.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|---|---|
+| **React.js** | Build the UI |
+| **React Router DOM** | Handle page navigation |
+| **Tailwind CSS + DaisyUI** | Styling and responsiveness |
+| **Recharts** | Chart |
+
+---
+
+## Features
+
+- **Friend Profile**: A detailed view for each friend including their contact frequency, relationship goals, and personal notes.
+- **Friendship Analytics Chart**: A colorful pie chart shows a clear visual breakdown of calls, texts, and video chats.
+- **Timeline**: A simple list shows all interactions, with an option to filter them by contact type.
