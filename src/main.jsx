@@ -12,6 +12,7 @@ import TimelineProvider from './context/TimelineProvider';
 import { useContext } from 'react';
 import { ContextTimeline } from './context/TimelineContext';
 import Timeline from './timeline/Timeline';
+import Stats from './pages/stats/Stats';
 
 
 
@@ -43,7 +44,7 @@ const router = createBrowserRouter(
         },
         {
           path: "/Stats",
-          element: <h2>Stats</h2>
+          element: <Stats />
         }
     ],
     errorElement: <NotFoundPage />

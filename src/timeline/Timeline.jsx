@@ -72,7 +72,9 @@ const Timeline = () => {
             );
           })
         ) : (
-          <p className="text-gray-400 italic">No entries found for {filter}</p>
+          <div className='w-1/3 mx-auto text-center boarder mb-25 '>
+          <p className="text-gray-400 italic text-xl mt-15">No entries found for {filter}</p>
+          </div>
         )}
       </div>
     </div>
