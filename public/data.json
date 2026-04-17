@@ -3,123 +3,183 @@
         "id": 1,
         "name": "David Kim",
         "picture": "img/Ellipse 1.png",
+        "email": "david.kim@example.com",
         "days_since_contact": "62d ago",
+        "status": "Almost Due",
         "tags": [
             "WORK"
         ],
-        "status": "Almost Due"
+        "bio": "Former colleague and a great mentor in software architecture.",
+        "preferred_contact": "Email",
+        "goal": 30,
+        "next_due_date": "Apr 28, 2026"
     },
     {
         "id": 2,
         "name": "Emma Wilson",
         "picture": "img/Ellipse 2.png",
+        "email": "emma.wilson@family.com",
         "days_since_contact": "62d ago",
+        "status": "Overdue",
         "tags": [
             "FAMILY"
         ],
-        "status": "Overdue"
+        "bio": "My younger sister. Always shares the best travel stories.",
+        "preferred_contact": "Call",
+        "goal": 14,
+        "next_due_date": "Feb 27, 2026"
     },
     {
         "id": 3,
         "name": "Lisa Nakamura",
         "picture": "img/Ellipse 3.png",
+        "email": "lisa.n@workmail.com",
         "days_since_contact": "62d ago",
+        "status": "Overdue",
         "tags": [
             "WORK"
         ],
-        "status": "Overdue"
+        "bio": "UX Designer colleague. Met during the Tech-Summit 2024.",
+        "preferred_contact": "Text",
+        "goal": 30,
+        "next_due_date": "Mar 15, 2026"
     },
     {
         "id": 4,
         "name": "James Wright",
         "picture": "img/Ellipse 4.png",
+        "email": "james.travels@gmail.com",
         "days_since_contact": "62d ago",
+        "status": "Overdue",
         "tags": [
             "HOBBY",
             "TRAVEL"
         ],
-        "status": "Overdue"
+        "bio": "Hiking buddy. We explored the Northern mountains together.",
+        "preferred_contact": "Video",
+        "goal": 60,
+        "next_due_date": "Mar 10, 2026"
     },
     {
         "id": 5,
         "name": "David Kim",
         "picture": "img/Ellipse 5.png",
+        "email": "dkim.creative@example.com",
         "days_since_contact": "62d ago",
+        "status": "Overdue",
         "tags": [
             "WORK"
         ],
-        "status": "Overdue"
+        "bio": "Project manager at the previous agency. Expert in agile.",
+        "preferred_contact": "Email",
+        "goal": 30,
+        "next_due_date": "Feb 20, 2026"
     },
     {
         "id": 6,
         "name": "Emma Wilson",
         "picture": "img/Ellipse 6.png",
+        "email": "emma.w22@outlook.com",
         "days_since_contact": "62d ago",
+        "status": "On-Track",
         "tags": [
             "FAMILY"
         ],
-        "status": "On-Track"
+        "bio": "Cousin from Texas. Great at organizing family reunions.",
+        "preferred_contact": "Call",
+        "goal": 30,
+        "next_due_date": "May 15, 2026"
     },
     {
         "id": 7,
         "name": "Lisa Nakamura",
         "picture": "img/Ellipse 7.png",
+        "email": "lisa.art@web.com",
         "days_since_contact": "62d ago",
+        "status": "On-Track",
         "tags": [
             "WORK"
         ],
-        "status": "On-Track"
+        "bio": "Freelance illustrator. We collaborated on multiple UI projects.",
+        "preferred_contact": "Text",
+        "goal": 21,
+        "next_due_date": "May 05, 2026"
     },
     {
         "id": 8,
         "name": "James Wright",
         "picture": "img/Ellipse 8.png",
+        "email": "j.wright88@provider.com",
         "days_since_contact": "62d ago",
+        "status": "Almost Due",
         "tags": [
             "HOBBY",
             "TRAVEL"
         ],
-        "status": "Almost Due"
+        "bio": "Photography enthusiast. Met in a Japan photo-walk group.",
+        "preferred_contact": "Video",
+        "goal": 45,
+        "next_due_date": "Apr 25, 2026"
     },
     {
         "id": 9,
         "name": "Sarah Jenkins",
         "picture": "img/Ellipse 9.png",
+        "email": "s.jenkins@university.edu",
         "days_since_contact": "5d ago",
+        "status": "On-Track",
         "tags": [
             "COLLEGE"
         ],
-        "status": "On-Track"
+        "bio": "Roommate from university. Currently pursuing her PhD in AI.",
+        "preferred_contact": "Text",
+        "goal": 7,
+        "next_due_date": "Apr 24, 2026"
     },
     {
         "id": 10,
         "name": "Marcus Chen",
         "picture": "img/Ellipse 10.png",
+        "email": "marcus.dev@firm.com",
         "days_since_contact": "15d ago",
+        "status": "Almost Due",
         "tags": [
             "WORK"
         ],
-        "status": "Almost Due"
+        "bio": "Lead backend developer. We often discuss system design.",
+        "preferred_contact": "Email",
+        "goal": 20,
+        "next_due_date": "May 02, 2026"
     },
     {
         "id": 11,
         "name": "Chloe Zhao",
         "picture": "img/Ellipse 11.png",
+        "email": "chloe.zhao@lifestyle.com",
         "days_since_contact": "90d ago",
+        "status": "Overdue",
         "tags": [
             "TRAVEL"
         ],
-        "status": "Overdue"
+        "bio": "Met during a solo trip to Bali. Yoga teacher by profession.",
+        "preferred_contact": "Email",
+        "goal": 90,
+        "next_due_date": "Jan 15, 2026"
     },
     {
         "id": 12,
         "name": "Tariq Aziz",
         "picture": "img/Ellipse 12.png",
+        "email": "tariq.aziz@coding.com",
         "days_since_contact": "2d ago",
+        "status": "On-Track",
         "tags": [
             "HOBBY",
             "TRAVEL"
         ],
-        "status": "On-Track"
+        "bio": "Open source contributor. Loves building small CLI tools.",
+        "preferred_contact": "Video",
+        "goal": 7,
+        "next_due_date": "Apr 19, 2026"
     }
 ]
